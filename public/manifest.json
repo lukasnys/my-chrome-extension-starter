@@ -1,0 +1,6 @@
+{
+  "name": "My Chrome Extension Starter",
+  "version": "1.0.0",
+  "description": "My Chrome Extension Starter",
+  "manifest_version": 3
+}
