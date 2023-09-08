@@ -1,5 +1,6 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -12,6 +13,10 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [{ from: ".", to: ".", context: "public" }],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/popup.html",
+      filename: "popup.html",
     }),
   ],
   resolve: {
